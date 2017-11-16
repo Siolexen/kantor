@@ -3,14 +3,14 @@ CREATE DATABASE cantor;
 USE cantor;
 CREATE TABLE Users (
 	Id int NOT NULL AUTO_INCREMENT,
-	username varchar(255) UNIQUE NOT NULL,
-	password varchar(255) NOT NULL,
+	username varchar(255) CHARACTER SET utf8 UNIQUE NOT NULL,
+	password varchar(255) CHARACTER SET utf8 NOT NULL,
 	PRIMARY KEY (Id)
 );
 CREATE TABLE TransactionHistory (
 	Id int NOT NULL AUTO_INCREMENT,
 	userId int NOT NULL,
-	currency varchar(255) NOT NULL,
+	currency varchar(255) CHARACTER SET utf8 NOT NULL,
 	price decimal (19, 4) NOT NULL,
 	PRIMARY KEY (Id)
 );
