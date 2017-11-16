@@ -3,7 +3,7 @@ CREATE DATABASE cantor;
 USE cantor;
 CREATE TABLE Users (
 	Id int NOT NULL AUTO_INCREMENT,
-	username varchar(255) NOT NULL,
+	username varchar(255) UNIQUE NOT NULL,
 	password varchar(255) NOT NULL,
 	PRIMARY KEY (Id)
 );
