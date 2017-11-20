@@ -3,7 +3,7 @@
 class Controller
 {
     public static function CreateView ($view) {
-        require_once './views/'.$view.'.php';
-        static::render();
+        extract(static::render());
+        include './views/'.$view.'.php';
     }
 }
