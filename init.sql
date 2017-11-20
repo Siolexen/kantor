@@ -10,8 +10,10 @@ CREATE TABLE Users (
 CREATE TABLE TransactionHistory (
 	Id int NOT NULL AUTO_INCREMENT,
 	userId int NOT NULL,
+	type ENUM('BUY', 'SELL') NOT NULL,
 	currency varchar(255) CHARACTER SET utf8 NOT NULL,
 	price decimal (19, 4) NOT NULL,
+	date DATETIME,
 	PRIMARY KEY (Id)
 );
 CREATE TABLE Wallets (
