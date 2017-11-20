@@ -1,5 +1,4 @@
 <?php
-require_once 'ConnectionDatabase.php';
 
 class User
 {
@@ -49,6 +48,6 @@ class User
             $response = $e;
         }
 
-        return var_dump($response);
+        return $response;
     }
 }
