@@ -7,3 +7,5 @@ Route::set('index.php', function () {
 Route::set('account', function () {
     Account::CreateView('Account');
 });
+
+Route::notFound();
