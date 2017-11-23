@@ -2,7 +2,7 @@
 
 class Homepage extends Controller
 {
-    public static function render() {
+    public static function index() {
         $text = 'Hello World';
 
         return [
