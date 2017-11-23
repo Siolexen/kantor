@@ -8,3 +8,5 @@ Struktura katalogów:
 views - widoki podstron
 controllers - logika aplikacji
 models - opreacje na bazie danych
+
+![Screenshot] (routes.png)
