@@ -12,4 +12,8 @@ Route::set('/account/wallet', function () {
     Account::CreateView('Wallet', Account::wallet());
 });
 
+Route::set('/api/currencies', function () {
+    Currencies::CreateView('Currencies', Currencies::get());
+});
+
 Route::notFound();

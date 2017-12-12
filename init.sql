@@ -20,9 +20,10 @@ CREATE TABLE Wallets (
 	Id int NOT NULL AUTO_INCREMENT,
 	userId int NOT NULL,
 	pln decimal (19, 4) NOT NULL,
-	eur decimal (19, 4) NOT NULL,
-	usd decimal (19, 4) NOT NULL,
-	gbp decimal (19, 4) NOT NULL,
-	chf decimal (19, 4) NOT NULL,
+	btc decimal (19, 4) NOT NULL,
+	ltc decimal (19, 4) NOT NULL,
+	dash decimal (19, 4) NOT NULL,
+	lsk decimal (19, 4) NOT NULL,
+	eth decimal (19, 4) NOT NULL,
 	PRIMARY KEY (Id)
 );
