@@ -18,7 +18,7 @@ class Currencies extends Controller
         foreach ($currencies as $currency => $value) {
             $response = self::callCURL('https://bitbay.net/API/Public/'.$value.'/ticker.json');
             if (strlen($response) !== 0) {
-                $convertedCurrencies[str_replace('PLN', '', $value)] = $response;
+                $convertedCurrencies[str_replace('PLN', '', $value)] = json_decode($response, true);
             }
         }
 
