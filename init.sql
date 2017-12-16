@@ -21,9 +21,11 @@ CREATE TABLE Wallets (
 	userId int NOT NULL,
 	pln decimal (19, 4) NOT NULL,
 	btc decimal (19, 4) NOT NULL,
+	bcc decimal (19, 4) NOT NULL
 	ltc decimal (19, 4) NOT NULL,
 	dash decimal (19, 4) NOT NULL,
 	lsk decimal (19, 4) NOT NULL,
 	eth decimal (19, 4) NOT NULL,
+	game decimal (19, 4) NOT NULL
 	PRIMARY KEY (Id)
 );

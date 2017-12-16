@@ -14,7 +14,7 @@ class Currencies extends Controller
 
     public static function get() {
         $convertedCurrencies = [];
-        $currencies = ['BTCPLN', 'LTCPLN', 'DASHPLN', 'LSKPLN', 'ETHPLN'];
+        $currencies = ['BTCPLN', 'BCCPLN' ,'LTCPLN', 'DASHPLN', 'LSKPLN', 'ETHPLN', 'GAMEPLN'];
         foreach ($currencies as $currency => $value) {
             $response = self::callCURL('https://bitbay.net/API/Public/'.$value.'/ticker.json');
             if (strlen($response) !== 0) {
